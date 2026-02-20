@@ -16,7 +16,7 @@ public class Calculadora {
 	public double promediar(double valor1, double valor2,double valor3) {
 		return (valor1+valor2+valor3)/3;
 	}
-	public String mostrarResultado() {
-		return "Ahorita no joven, Sali al almuerzo. Regreso en 15 minutos";
+	public void mostrarResultado() {
+		System.out.println("Mensaje: Ahorita no joven, Sali al almuerzo. Regreso en 15 minutos");
 	}
 }

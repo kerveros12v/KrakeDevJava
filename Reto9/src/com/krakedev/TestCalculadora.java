@@ -8,6 +8,6 @@ public static void main(String[] args) {
 	System.out.println("Multiplicar : "+calculadora.multiplicar(3, 8));
 	System.out.println("Division : "+calculadora.dividir(35, 5));
 	System.out.println("Promediar : "+calculadora.promediar(3, 5,7));
-	System.out.println("Mensaje: "+calculadora.mostrarResultado());
+	calculadora.mostrarResultado();
 }
 }
