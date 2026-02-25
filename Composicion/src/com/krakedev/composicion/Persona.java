@@ -35,4 +35,9 @@ public void setEdad(int edad) {
 public void setEstatura(double estatura) {
 	this.estatura = estatura;
 }
+public void imprimir() {
+	System.out.println("Nombre: "+this.nombre+
+			"\nApellido: "+this.apellido+
+			"\nDireccion: "+((this.direccion!=null)?direccion.getCallePrincipal()+" "+direccion.getNumero()+" y "+direccion.getCalleSecundaria():null));
+}
 }

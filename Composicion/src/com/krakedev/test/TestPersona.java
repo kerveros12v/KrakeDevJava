@@ -20,6 +20,10 @@ public class TestPersona {
 		Direccion direccion=persona1.getDireccion();
 		System.out.println(nombre);
 		System.out.println(direccion.getCallePrincipal());
+		persona1.imprimir();
+		Persona p2=new Persona();
+		p2.setNombre("Andres");
+		p2.imprimir();
 	}
 
 }
