@@ -3,7 +3,15 @@ package com.krakedev.composicion;
 public class Direccion {
 private String callePrincipal,calleSecundaria,numero;
 private double latitud,longitud;
+public Direccion() {
+	// TODO Auto-generated constructor stub
+}
+public Direccion(String callePrincipal, String calleSecundaria, String numero) {
 
+	this.callePrincipal = callePrincipal;
+	this.calleSecundaria = calleSecundaria;
+	this.numero = numero;
+}
 public String getCallePrincipal() {
 	return callePrincipal;
 }

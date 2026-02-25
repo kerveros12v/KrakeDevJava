@@ -24,6 +24,9 @@ public class TestPersona {
 		Persona p2=new Persona();
 		p2.setNombre("Andres");
 		p2.imprimir();
+		Persona p3=new Persona();
+		p3.setDireccion(new Direccion("xxx","yyy","123"));
+		p3.imprimir();
 	}
 
 }
