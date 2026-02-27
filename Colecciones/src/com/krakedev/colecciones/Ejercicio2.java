@@ -9,7 +9,7 @@ public class Ejercicio2 {
 		ArrayList<Persona> personas = new ArrayList<Persona>();
 		personas.add(new Persona("Leo", "Messi"));
 		personas.add(new Persona("Cristiano", "Ronaldo"));
-		personas.add(new Persona("Thiago", "Messi	"));
+		personas.add(new Persona("Thiago", "Messi"));
 		Persona elementoPersona;
 		for(int i=0;i<personas.size();i++) {
 			elementoPersona=personas.get(i);
