@@ -11,5 +11,10 @@ public static void main(String[] args) {
 	System.out.println(cadenas.size());
 	String valorRecuperado = cadenas.get(0);
 	System.out.println(valorRecuperado);
+	String cadena;
+	for(int i=0;i<cadenas.size();i++) {
+		cadena=cadenas.get(i);
+		System.out.println("cadena: "+cadena);
+	}
 }
 }
