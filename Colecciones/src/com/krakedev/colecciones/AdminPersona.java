@@ -19,4 +19,11 @@ public class AdminPersona {
 				System.out.println("Persona: "+persona.getNombre()+" "+persona.getApellido()+","+persona.getEdad());
 			}
 	}
+	public Persona buscarPorNombre(String nombre) {
+		for (Persona persona : personas) {
+			return (persona.getNombre().equalsIgnoreCase(nombre))?persona:null;
+			
+		}
+		return null;
+	}
 }

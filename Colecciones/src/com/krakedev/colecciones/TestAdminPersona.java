@@ -9,6 +9,8 @@ public class TestAdminPersona {
 		admin.agregar(new Persona("Leo", "Messi",30));
 		admin.agregar(new Persona("Cristiano", "Ronaldo",25));
 		admin.agregar(new Persona("Thiago", "Messi",10));
+		Persona p1=admin.buscarPorNombre("MArio");
+		System.err.println("Persona: "+p1.getNombre()+" "+p1.getApellido()+" , "+p1.getEdad());
 		admin.imprimir();
 	}
 
