@@ -26,4 +26,12 @@ public class AdminPersona {
 		}
 		return null;
 	}
+	public ArrayList<Persona> buscarMayores(int edad) {
+		ArrayList<Persona>resultado=new ArrayList<Persona>();
+		for (Persona persona : personas) {
+		if(persona.getEdad()>edad)resultado.add(persona);
+			
+		}
+		return resultado;
+	}
 }
