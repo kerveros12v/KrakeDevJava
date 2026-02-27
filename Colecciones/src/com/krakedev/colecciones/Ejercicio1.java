@@ -9,5 +9,7 @@ public static void main(String[] args) {
 	cadenas.add("uno");
 	cadenas.add("dos");
 	System.out.println(cadenas.size());
+	String valorRecuperado = cadenas.get(0);
+	System.out.println(valorRecuperado);
 }
 }
