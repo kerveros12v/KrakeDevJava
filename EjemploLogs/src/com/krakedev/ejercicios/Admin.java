@@ -7,6 +7,11 @@ public class Admin {
 	private static Logger logger = LogManager.getLogger(Admin.class);
 
 	public void agregar() {
-		logger.info("ingresa a agregar");
+		logger.info("mensaje info");
+		logger.warn("mensaje warn");
+		logger.trace("mensaje trace");
+		logger.error("mensaje error");
+		logger.debug("mensaje debug");
+		
 	}
 }
