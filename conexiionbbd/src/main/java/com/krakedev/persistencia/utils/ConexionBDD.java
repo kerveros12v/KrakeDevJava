@@ -10,16 +10,20 @@ public class ConexionBDD {
 	private final static String USUARIO = "postgres";
 	private final static String CLAVE = "postgres";
 
-	public static Connection conectar()  {
+	public static Connection conectar() throws Exception {
 		Connection connection = null;
 
 		try {
 			Class.forName(DRIVER);
 
 			connection = DriverManager.getConnection(URL, USUARIO, CLAVE);
-
-		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println("Conectado.....");
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
+			throw new Exception("Error en la infraestructura");
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new Exception("Error al conectarse, revise usuario,clave");
 		}
 
 		return connection;
