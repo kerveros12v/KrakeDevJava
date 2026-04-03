@@ -1,14 +1,14 @@
 package com.krakedev.persistencia.entidades;
 
 import java.math.BigDecimal;
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
+
 
 public class Persona {
 private String cedula, nombre, apellido;
 private double estatura;
 private Date fecha_nacimiento;
-private Time hora_nacimiento;
+private Date hora_nacimiento;
 private BigDecimal cantidad_ahorrada;
 private int numero_hijos;
 private EstadoCivil estado;
@@ -17,7 +17,7 @@ public Persona() {
 	super();
 }
 public Persona(String cedula, String nombre, String apellido, double estatura, Date fecha_nacimiento,
-		Time hora_nacimiento, BigDecimal cantidad_ahorrada, int numero_hijos, EstadoCivil estado) {
+		Date hora_nacimiento, BigDecimal cantidad_ahorrada, int numero_hijos, EstadoCivil estado) {
 	super();
 	this.cedula = cedula;
 	this.nombre = nombre;
@@ -59,10 +59,10 @@ public Date getFecha_nacimiento() {
 public void setFecha_nacimiento(Date fecha_nacimiento) {
 	this.fecha_nacimiento = fecha_nacimiento;
 }
-public Time getHora_nacimiento() {
+public Date getHora_nacimiento() {
 	return hora_nacimiento;
 }
-public void setHora_nacimiento(Time hora_nacimiento) {
+public void setHora_nacimiento(Date hora_nacimiento) {
 	this.hora_nacimiento = hora_nacimiento;
 }
 public BigDecimal getCantidad_ahorrada() {
