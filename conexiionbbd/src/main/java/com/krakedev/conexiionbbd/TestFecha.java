@@ -20,17 +20,17 @@ java.sql.Date fechaSQL;
 try {
 	//Se transforma a Date la fecha formateada
 	Date fecha=  sdf.parse(fechaStr);
-	System.out.println(fecha);
+	LOGGER.info(fecha);
 	//Se obtiene el valor long de la fecha
 	long fechamilis=fecha.getTime();
-	System.out.println(fechamilis);
+	LOGGER.info(fechamilis);
 	//llamamos a Date de sql y le pasamos el valor long para obtener la fecha
 	fechaSQL=new java.sql.Date(fechamilis);
-	System.out.println(fechaSQL);
+	LOGGER.info(fechaSQL);
 	//llamamos Time de sql y le pasamos el valor long para obtener 
 	//el tiempo en horas minutos y segundos
 	 timeSQL=new Time(fechamilis);
-	System.out.println(timeSQL);
+	 LOGGER.info(timeSQL);
 } catch (ParseException e) {
 	e.printStackTrace();
 }
