@@ -5,10 +5,15 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Time;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.krakedev.persistencia.entidades.Persona;
 import com.krakedev.persistencia.utils.ConexionBDD;
 
+
 public class AdminPersonas {
+	private static final Logger LOGGER=LogManager.getLogger();
 public static void insertar(Persona persona) {
 	Connection con=null;
 	PreparedStatement ps;
@@ -25,10 +30,10 @@ public static void insertar(Persona persona) {
 	ps.setInt(8,persona.getNumero_hijos());
 	ps.setString(9, persona.getEstado().getCodigo());
 	ps.executeUpdate();
-	System.out.println("insertar....OK");
+LOGGER.info("insertar....OK");
 	} catch (Exception e) {
 		// TODO: handle exception
-		System.err.println(e.getMessage());
+		LOGGER.error(e.getMessage());
 		e.printStackTrace();
 	}finally {
 		try {

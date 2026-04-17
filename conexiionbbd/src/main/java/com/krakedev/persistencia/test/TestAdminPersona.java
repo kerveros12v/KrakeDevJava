@@ -10,7 +10,7 @@ import com.krakedev.persistencia.utils.Convertidor;
 public class TestAdminPersona {
 	public static void main(String[] args) {
 		try {
-			AdminPersonas.insertar(new Persona("0003854189", "Sean", "Alban", 1.50,
+			AdminPersonas.insertar(new Persona("1113854489", "SeaGHn", "AlbaFFn", 1.50,
 					Convertidor.convertirFecha("1990/12/14"), Convertidor.convertirHora("08:00:00"),
 					new BigDecimal(100.00), 3, new EstadoCivil("U", "Union Libre")));
 		} catch (Exception e) {

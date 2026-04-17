@@ -5,8 +5,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date ;
 
-public class TestFecha {
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+public class TestFecha {
+	private static final Logger LOGGER=LogManager.getLogger();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Se da el formato de la fecha y hora
